@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>table_practice</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th scope="col">월</th>
+          <!-- scope="col | row"  th 태그에만 쓸 수 있으며 이 th가 가로 | 세로의 헤더임을 브라우저에 설명하는 attribute이다.  -->
+          <th scope="col">화</th>
+          <th scope="col">수</th>
+          <th scope="col">목</th>
+          <th scope="col">금</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1교시</th>
+          <td rowspan="2" class="html-css-basic">왕초보 HTML &amp; CSS</td>
+          <!-- rowspan : 세로로 합치기 | colspan : 가로로 합치기 -->
+          <td class="coding">모각코</td>
+          <td rowspan="2" class="html-css-basic">왕초보 HTML &amp; CSS</td>
+          <td class="coding">모각코</td>
+          <td rowspan="2" class="html-css-basic">왕초보 HTML &amp; CSS</td>
+        </tr>
+        <tr>
+          <th scope="row">2교시</th>
+          <!-- <td>왕초보 HTML &amp; CSS</td> -->
+          <td rowspan="2" class="js-skillup">JavaScript 스킬업</td>
+          <!--<td>왕초보 HTML &amp; CSS</td> -->
+          <td rowspan="2" class="js-skillup">JavaScript 스킬업</td>
+          <!-- <td>왕초보 HTML &amp; CSS</td> -->
+        </tr>
+        <tr>
+          <th scope="row">3교시</th>
+          <td class="js-basic">JavaScript 시작반</td>
+          <!-- <td>JavaScript 스킬업</td> -->
+          <td class="js-basic">JavsScript 시작반</td>
+          <!-- <td>JavaScript 스킬업</td> -->
+          <td class="js-basic">JavaScript 시작반</td>
+        </tr>
+        <tr scope="row">
+          <th colspan="6">점심시간</th>
+        </tr>
+        <tr>
+          <th scope="row">4교시</th>
+          <td class="sass-basic">SASS 기초반</td>
+          <td rowspan="2" class="portfolio">
+            HTML &amp; CSS<br />포트폴리오반
+          </td>
+          <td rowspan="2">Open Seminar</td>
+          <td rowspan="2" class="portfolio">
+            HTML &amp; CSS<br />포트폴리오반
+          </td>
+          <td class="sass-basic">SASS 기초반</td>
+        </tr>
+        <tr>
+          <th scope="row">5교시</th>
+          <td class="coding">모각코</td>
+          <!-- <td rowspan="2">HTML &amp; CSS<br />포트폴리오반</td> -->
+          <!-- <td rowspan="2">Open Seminar</td> -->
+          <!-- <td rowspan="2">HTML &amp; CSS<br />포트폴리오반</td> -->
+          <td class="coding">모각코</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

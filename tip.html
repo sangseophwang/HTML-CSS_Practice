@@ -8,7 +8,8 @@
        더욱 도움이 된다.
     4. <dl> 의 자식 요소는 오로지 <div>, <dt>, <dd> 만 가능하다! 그리고 <dt> 와 <dd> 는 반드시 <dl> 의 자식 요소로 존재해야 한다.
     5. input type="number" 일 때는 최대값은 max, 최소값은 min 으로 작성한다. ( 다른 값들은 minlength,  maxlength )
-     
+    6. <input> 태그에서  accept="image/*, audio/*, video/*" 는 모든 이미지 파일, 모든 오디오 파일, 모든 비디오 파일을 허용하겠다는 뜻이다. 
+
 -->
 
 <!-- 
@@ -86,7 +87,82 @@ target="_blank" 새 창으로 열기
 
 <input type="tel" pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}" />
 
-<input type="file" accept=".jpg, .png" />
+<input type="file" accept=".jpg, .png" /> 
 
+
+<label for="누구 (id 값) "> alallalalal  </label>  ->  label 태그는 어떠한 input 태그와 관련이 있는지를 알리기 위해 for 을 붙인다. 
+
+
+
+<input type="radio" name="subscription" id="subscribed" value="yes"/>   id는 label과 연결하기 위해 쓴다.
+<label for="subscribed">구독중</label>                                    이렇게 name 으로 두 radio를 묶을 수 있다. (한 가지만 선택 가능하게 만들 수 있다.)
+                                                                        그리고 value를 이용해 서버에 내가 선택한 값을 확인할 수 있도록 한다.
+<input type="radio" name="subscription" id="unsubscribed" value="no"/>
+<label for="subscribed">미구독</label>
+
+<checkbox> 는 <radio>와 다르게 다중 선택이 가능하다!
+
+
+<label for="city"> 도시 </label>
+
+<select multiple name="city" id="city">
+  <optgroup label="경기도">
+    <option value="0">고양</option>
+    <option value="1">과천</option>
+    </optgroup>                                                            select는 이렇게 사용하면 된다.
+                                                                            select에 multiple을 붙이면 다중 선택이 가능하다!
+  <optgroup label="경상도">
+    <option value="2">김해</option>
+    <option value="3">창원</option>
+  </optgroup>
+    <option value="4">서울</option>
+</select>
+
+
+<textarea id="Self_introduce"
+  name="Self_introduce"
+  placeholder="최소 10자 이상 서술하세요."
+  minlength= "10"
+  maxlength="1000"
+  required>
+  on   <- 여기에 텍스트를 적으시면 default value로 on이 보인다.
+</textarea>
+<label for = "Self_introduce"> 자기소개서 </label>
+
+<table>
+
+    <thead>
+
+    <tr>
+        <th>ID</th>
+        <th>이름</th>
+        <th>개발분야</th>
+        <th>기타</th>
+    </tr>
+
+    </thead>
+
+    <tbody>
+
+    <tr>
+        <th>00001</th>
+        <th>섭</th>
+        <th>프론트엔드</th>
+        <th></th>
+    </tr>
+
+    <tr>
+        <th>00002</th>
+        <th>김</th>
+        <th>풀스택</th>
+        <th></th>
+    </tr>
+
+    </tbody>
+
+
+    <tfoot>
+
+    </tfoot>
 
  -->
