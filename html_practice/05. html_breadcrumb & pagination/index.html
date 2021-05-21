@@ -6,5 +6,48 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Breadcrumb &amp; pagination</title>
   </head>
-  <body></body>
+  <body>
+    <div class="breadcrumb">
+      <a href="https://github.com/sangseophwang">sangseophwang</a>
+      <a href="https://github.com/sangseophwang/html-css_practice"
+        >html-css_practice</a
+      >
+    </div>
+
+    <!-- WAI_ARIA : aria-label 을 사용하면 시각장애인들이 좀 더 편리하게 이용할 수 있다.-->
+
+    <div class="pagination">
+      <a href="#" aria-label="Go to previous page" class="disabled">Previous</a>
+      <ol>
+        <li class="current-page">
+          <a href="#" aria-label="Current page. Go to page 1">1</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Go to page 2">2</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Go to page 3">3</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Go to page 4">4</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Go to page 5">5</a>
+        </li>
+        <li class="disabled">
+          <button type="button" disabled>...</button>
+        </li>
+        <li>
+          <a href="#" aria-label="Go to page 6">6</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Go to page 7">7</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Go to page 8">8</a>
+        </li>
+      </ol>
+      <a href="#" aria-label="Go to next page">Next</a>
+    </div>
+  </body>
 </html>
