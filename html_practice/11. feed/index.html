@@ -4,7 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Product card</title>
+    <title>Feed</title>
   </head>
-  <body></body>
+  <body>
+    <div class="feed">
+      <div class="feed-user-profile">
+        <a href="#">
+          <img
+            src="https://www.askbayou.com/wp-content/uploads/2021/02/square.jpg"
+            alt="profile image"
+          />
+        </a>
+
+        <div>
+          <h1>
+            <a href="#"> sangseophwang </a>
+          </h1>
+          <span aria-label="Posted 30 minutes ago"> 30 min </span>
+          <button type="button">Follow</button>
+        </div>
+      </div>
+
+      <div class="feed-content">
+        <p>
+          The most beautiful experience we can have is the mysterious. It is the
+          fundamental emotion that stands at the cradle of true art and true
+          science. — Albert Einstein
+        </p>
+      </div>
+
+      <div class="feed-footer">
+        <button type="button">100 Likes</button>
+        <button type="button">0 Comments</button>
+      </div>
+
+      <div class="feed-comment">
+        <form action="" method="POST">
+          <textarea
+            name="feed_comment"
+            placeholder="Write a comment"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>

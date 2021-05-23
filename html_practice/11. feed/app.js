@@ -17,10 +17,10 @@ followButton.following = false;
 
 likeButton.addEventListener("click", function () {
   if (this.following) {
-    this.innerHTML = "10 Likes";
+    this.innerHTML = "100 Likes";
     this.classList.remove("active");
   } else {
-    this.innerHTML = "11 Likes";
+    this.innerHTML = "101 Likes";
     this.classList.add("active");
   }
   this.following = !this.following;
