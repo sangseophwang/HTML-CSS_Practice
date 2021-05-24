@@ -24,7 +24,7 @@ body {
 }
 
 body::after {
-  content: "kimbug©";
+  content: "seop©";
   display: block;
   margin-top: 50px;
   color: #1f2d3d;
