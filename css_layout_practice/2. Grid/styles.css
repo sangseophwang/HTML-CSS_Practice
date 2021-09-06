@@ -1,20 +1,39 @@
-.father {
+.grid {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 100px 80px 200px;
-  gap: 10px;
+  grid-template-columns: auto 150px;
+  grid-template-rows: 100px repeat(2, 150px) 100px;
+  grid-template-areas:
+    "header header header header"
+    "content content content nav"
+    "content content content nav"
+    "footer footer footer footer";
 }
 
-.child {
-  flex-basis: 33%;
+.header {
+  background-color: green;
+  grid-area: header;
+}
+
+.content {
   background-color: tomato;
-  color: white;
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-area: content;
+}
+
+.nav {
+  background-color: teal;
+  grid-area: nav;
+}
+
+.footer {
+  background-color: orange;
+  grid-area: footer;
 }
 
 /*  grid-template-row 로 세로 크기를,
     grid-template-column으로 가로 크기를 조절할 수 있다.
     그리고 gap을 이용해 각 박스의 간격을 조정할 수 있다. */
+
+/*  grid 반복을 할때는 repeat(개수, 크기) 로 작성하면 된다.
+    그리고 grid-template-area로 얼마나 영역을 차지할지를 시각적으로
+    제작할 수 있다. 그리고 grid-area로 각 클래스에 지정을 해줘야 이 기능이
+    작동을 한다. 작성할 때는 문자열이 아닌 이름 그대로 적어야 한다. */
