@@ -1,0 +1,25 @@
+.father {
+  display: flex;
+
+  /* Main Axis */
+  justify-content: space-around;
+
+  height: 90vh;
+}
+
+.child {
+  width: 150px;
+  height: 150px;
+  background-color: tomato;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.child:nth-child(2) {
+  order: 1;
+}
+
+.child:nth-child(3) {
+  order: 2;
+}
