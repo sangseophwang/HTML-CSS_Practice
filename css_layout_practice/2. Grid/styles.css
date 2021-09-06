@@ -1,7 +1,7 @@
 .grid {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: [first] 100px [second] 100px [third] 100px [fourth] 100px [fifth] 100px;
   grid-template-rows: repeat(4, 100px);
 }
 
@@ -12,18 +12,18 @@
 
 .content {
   background-color: tomato;
-  grid-column: 1 / -2;
+  grid-column: first / fourth;
   grid-row: 2 / span 2;
 }
 
 .nav {
   background-color: teal;
-  grid-row: 2 / -2;
+  grid-row: 2 / 4;
 }
 
 .footer {
   background-color: orange;
-  grid-column: 1 / 5;
+  grid-column: first / fifth;
 }
 
 /*  grid-template-row 로 세로 크기를,
@@ -43,3 +43,6 @@
     그리고 마지막 위치까지 늘리기 위해 이전에는 5, 4 이렇게 위치를 파악해
     작성했는데, 그냥 -1을 쓰면 끝까지 늘어나게 된다.
     (전체 다 늘리는데) 이것도 귀찮으면 span을 쓰고 cell 개수를 쓰면 된다.*/
+
+/*  grid line에 이름을 붙일 수 있다. '[이름] 크기' 이렇게 적으면 
+    적용할 수 있다.  */
