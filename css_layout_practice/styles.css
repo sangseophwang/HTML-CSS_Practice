@@ -19,5 +19,13 @@
   background-color: black;
 }
 
+/*  align-self로 각각의 요소에게 위치 지정을
+    할 수 있다. order는 HTML을 건드리지 않고
+    박스의 순서를 변경할 수 있다.*/
+
 /* flex-shrink는 화면이 줄어들 때 효과이고
    flex-grow는 화면이 늘어날 때 효과이다. */
+
+/*  flex-basis는 기본 사이즈를 정해주는데,
+    flex-direction에 따라 어느 방향이 늘어날지
+    결정된다. */
