@@ -4,7 +4,8 @@
   height: 50vh;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  place-items: center center;
+  color: white;
+  font-size: 20px;
 }
 
 .header {
@@ -48,4 +49,10 @@
     이름을 지정한 뒤 얼마나 공간을 차지할 지 적어주고,  1fr(fraction) 이런
     식으로 적어주면 된다. */
 
-/*  place-items로 grid의 위치를 조정할 수 있다. place-items: y축 x축 */
+/*  place-items로 grid의 위치를 조정할 수 있다. place-items: y축 x축
+    place-content와 다른 점은 그리드 한개씩을 조정한다는 것이다. */
+
+/*  grid에서 justify-content는 그리드 전체를 수평적으로 움직이는 것,
+    align-content는 그리드 전체를 수직적으로 움직이는 것이다. 이 기능으로
+    그리드 전체의 위치 조정을 할 수 있다. 그래서 'place-content: y축 x축'으로
+    합쳐서 조작하면 된다.*/
