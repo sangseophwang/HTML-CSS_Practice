@@ -1,27 +1,20 @@
 .grid {
   display: grid;
   gap: 5px;
-  height: 50vh;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  grid-auto-flow: row;
+  grid-auto-rows: 100px;
   color: white;
   font-size: 20px;
 }
 
-.header {
+.item:nth-child(odd) {
   background-color: green;
 }
 
-.content {
+.item:nth-child(even) {
   background-color: tomato;
-}
-
-.nav {
-  background-color: teal;
-}
-
-.footer {
-  background-color: orange;
 }
 
 /*  grid-template-row 로 세로 크기를,
@@ -56,3 +49,10 @@
     align-content는 그리드 전체를 수직적으로 움직이는 것이다. 이 기능으로
     그리드 전체의 위치 조정을 할 수 있다. 그래서 'place-content: y축 x축'으로
     합쳐서 조작하면 된다.*/
+
+/*  align-self와 justify-self는 하나의 grid를 조정할 때 쓴다. 
+    이것도 place-self로 합쳐서 쓸 수 있다.*/
+
+/*  grid를 추가로 만들다보면 repeat의 크기를 매번 수동으로 수정해줘야 한다.
+    이런 피곤함을 없애기 위해 grid-auto-columns / grid-auto-rows를
+    사용하면 나중에 추가될 때 자동으로 적용이 되도록 할 수 있다. */
