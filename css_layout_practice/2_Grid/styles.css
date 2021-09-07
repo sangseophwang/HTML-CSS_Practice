@@ -1,10 +1,17 @@
 .grid {
   display: grid;
   gap: 5px;
-  grid-template-columns: repeat(10, minmax(40px, 1fr));
-  grid-template-rows: repeat(4, 100px);
+  grid-template-rows: repeat(5, 100px);
   color: white;
   font-size: 20px;
+}
+
+.grid:first-child {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.grid:last-child {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .item:nth-child(odd) {
@@ -57,3 +64,9 @@
 
 /*  minmax를 사용해 화면 크기가 늘어나고 줄어들 때 최소, 최대 크기를 지정할 수
     있다. minmax( 최소 , 최대 ) 이렇게 작성해주면 된다. */
+
+/*  auto-fill은 늘어나면 지정한 크기만큼 빈 공간이 계속 생긴다. 그래서 박스를
+    추가하면 빈 공간에 추가가 된다. auto-fit은 현재 있는 박스들로 화면을 쭉 
+    채운다. 그리고 새로운 박스가 추가되면 기존 요소들의 크기가 줄면서 새로운 요소를
+    추가한다. 정리하자면, auto-fill은 정확한 사이즈대로, auto-fit은 유동적인
+    사이즈에 사용하면 된다. */
