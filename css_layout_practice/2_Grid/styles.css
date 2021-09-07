@@ -2,30 +2,25 @@
   display: grid;
   gap: 5px;
   height: 50vh;
-  grid-template:
-    "header header header header" 1fr
-    "content content content nav" 2fr
-    "footer footer footer footer" 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  place-items: center center;
 }
 
 .header {
   background-color: green;
-  grid-area: header;
 }
 
 .content {
   background-color: tomato;
-  grid-area: content;
 }
 
 .nav {
   background-color: teal;
-  grid-area: nav;
 }
 
 .footer {
   background-color: orange;
-  grid-area: footer;
 }
 
 /*  grid-template-row 로 세로 크기를,
@@ -48,3 +43,9 @@
 
 /*  grid line에 이름을 붙일 수 있다. '[이름] 크기' 이렇게 적으면 
     적용할 수 있다.  */
+
+/*  grid-template로 더 간단하고 직관적으로 정렬할 수 있다. grid-area로
+    이름을 지정한 뒤 얼마나 공간을 차지할 지 적어주고,  1fr(fraction) 이런
+    식으로 적어주면 된다. */
+
+/*  place-items로 grid의 위치를 조정할 수 있다. place-items: y축 x축 */
