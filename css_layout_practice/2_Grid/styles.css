@@ -1,17 +1,16 @@
 .grid {
   display: grid;
   gap: 5px;
-  grid-template-rows: repeat(5, 100px);
+  grid-template-columns: repeat(5, minmax(max-content, 1fr));
+  grid-auto-rows: 100px;
+  margin-bottom: 30px;
   color: white;
-  font-size: 20px;
 }
 
 .grid:first-child {
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
 
 .grid:last-child {
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .item:nth-child(odd) {
