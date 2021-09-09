@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAEE;EACE;EACA,OAJI","file":"main.39afc03c.css","sourceRoot":"..","sourcesContent":["$color: royalblue;\n.container {\n  h1 {\n    font-size: 50px;\n    color: $color;\n  }\n}\n"]}
