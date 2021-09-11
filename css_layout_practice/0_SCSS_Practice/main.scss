@@ -3,5 +3,9 @@ $color: royalblue;
   h1 {
     font-size: 50px;
     color: $color;
+    cursor: pointer;
+  }
+  &:hover {
+    color: tomato;
   }
 }
