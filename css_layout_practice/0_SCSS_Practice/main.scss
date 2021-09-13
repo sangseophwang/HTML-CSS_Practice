@@ -1,11 +1,23 @@
 $color: royalblue;
+$size: 10px;
+
 .container {
-  h1 {
-    font-size: 50px;
-    color: $color;
-    cursor: pointer;
+  background-color: $color;
+  width: 150px;
+  height: 150px;
+  font: {
+    weight: bold;
+    size: $size;
+    family: sans-serif;
   }
-  &:hover {
-    color: tomato;
+  margin: {
+    top: $size;
+    left: $size;
+  }
+  padding: {
+    top: $size;
+    bottom: $size;
+    left: $size;
+    right: $size;
   }
 }
